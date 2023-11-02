@@ -3,9 +3,11 @@ import axios from 'axios';
 import { Download, Camera } from 'lucide-react';
 
 
+
+
 function Search() {
   const imageStyle = {
-    backgroundImage: `url(./Images/search-img.jpg)`,
+    backgroundImage: `url(./Images/technolog.jpg)`,
     backgroundSize: '100% 100%',
     backgroundPosition: 'center',
     height: '50vh',
@@ -92,12 +94,12 @@ function Search() {
           </header>
         </div>
       </div>
-      <section className="search bg-gray-100">
+      <section className="search ">
         <div className="image-container" style={imageStyle}>
           <div className="content  text-center">
-            <h1 className="text-4xl text-white font-semibold">Explore the World in Snapshots</h1>
-            <p className="text-white text-lg">Search and download any images within a second</p>
-            <div className="search-box  justify-center items-center mt-4 flex items-center bg-white rounded-lg p-2">
+            <h1 className="text-4xl text-white font-semibold">Discover the World Through Images</h1>
+            <p className="text-white text-lg">Effortlessly search and download images in an instant</p>
+            <div className="search-box  border border-black justify-center items-center mt-4 flex  bg-white rounded-lg p-2" style={{ marginLeft:"12px" ,marginRight:"12px"}}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -157,7 +159,7 @@ function Search() {
         {loading && <p>Loading...</p>}
         {!loading && (
           <button
-            className="load-more bg-blue-500 mt-12 text-white py-2 px-4 rounded-md"
+            className="load-more bg-indigo-500 mt-12 text-white py-2 px-4 rounded-md"
             onClick={loadMoreImages}
           >
             Load More
@@ -167,6 +169,8 @@ function Search() {
     </div>
   );
 }
+
+
 
 export default Search;
 
